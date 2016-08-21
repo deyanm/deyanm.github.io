@@ -21,7 +21,7 @@ I have used some projects to get an idea:
 
 #### Access the webstie
 
-You can view the website here [deyanm.github.com](https://github.com/deyanm/deyanm.github.com.git)
+You can view the website here [deyanm.github.com](https://deyanm.github.io/)
 
 ### TODO-s
 
@@ -29,6 +29,8 @@ You can view the website here [deyanm.github.com](https://github.com/deyanm/deya
  - Add simple blog for discussing
  - Add commenting system - Disqus
  - Cover photo for the readme
+ - Add social icons styles and animations
+ - Add fade-out animation for page elements
 
 License
 ----
