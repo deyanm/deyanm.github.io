@@ -108,7 +108,7 @@ a {
 
 a.contact {
     display: block;
-    width: calc(33.3% - 10px);
+    width 12em;
     height: 64px;
     border-radius: 8px;
     border: 1px solid #222;
@@ -120,6 +120,7 @@ a.contact {
     vertical-align: middle;
     margin: 0 auto;
     padding: 0px;
+    float: left;
     text-transform: uppercase;
     transition: border 0.2s ease-out, box-shadow 0.3s ease-out, background 0.2s ease-out, transform 0.4s ease-in, opacity 0.3s ease-in;
 }
