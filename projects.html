@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Deyan Marinov &middot; Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--[if lte IE 8]><link rel="stylesheet" href="../../responsive-nav.css"><![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="dist/styles.css">
+    <link rel="stylesheet" href="dist/font-awesome.css">
+    <!--<![endif]-->
+    <script src="dist/responsive-nav.js"></script>
+</head>
+
+<body>
+
+    <div role="navigation" id="foo" class="nav-collapse">
+        <img class="img-circle" src="icons/profile.png" alt="avatar">
+        <ul>
+            <li><a href="index.html">Hello</a></li>
+            <li class="active"><a href="projects.html">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <a class="contact" href="mailto:deiandeni13@gmail.com">Contact Me</a>
+        <ul class="social-icons">
+            <li><a href="http://facebook.com/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="http://linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="http://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="http://plus.google.com/"><i class="fa fa-google-plus"></i> </a></li>
+        </ul>
+    </div>
+
+    <div role="main" class="main">
+        <a href="#nav" class="nav-toggle">Menu</a>
+        <h1>Projects</h1>
+        <div class="proj-container">
+            <div class="proj-container-info">
+                <h2>Pravets PC</h2>
+                <p class="proj-container-spec"><span>Information website about</span><span>computers made in Pravets.</span></p>
+            </div>
+            <img src="icons/pravec.png">
+        </div>
+        <div class="proj-container">
+            <div class="proj-container-info">
+                <h2>Title</h2>
+                <p class="proj-container-spec">More stuff</p>
+            </div>
+            <img src="icons/1.jpg">
+        </div>
+        <div class="proj-container">
+            <div class="proj-container-info">
+                <h2>Title</h2>
+                <p class="proj-container-spec">More stuff</p>
+            </div>
+            <img src="icons/2.jpg">
+        </div>
+    </div>
+
+    <script>
+        var navigation = responsiveNav("foo", {
+            customToggle: ".nav-toggle"
+        });
+    </script>
+</body>
+
+</html>
