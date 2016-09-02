@@ -2,7 +2,7 @@
 
 This is the repository for my website. I use github to host the files
 
-> You can use the provided source code, but only leave the images ;) 
+> You can use the provided source code, but only leave the images please ;) 
 
 ### Tools
 
@@ -21,7 +21,7 @@ I have used some projects to get an idea:
 
 #### Access the webstie
 
-You can view the website here [deyanm.github.com](https://deyanm.github.io/)
+You can view the website here [deyanm.com](http://deyanm.com/)
 
 ### TODO-s
 

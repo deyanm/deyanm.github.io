@@ -106,31 +106,6 @@ a {
     text-decoration: none;
 }
 
-a.contact {
-    display: block;
-    width 12em;
-    height: 64px;
-    border-radius: 8px;
-    border: 1px solid #222;
-    font-size: 1.1em;
-    line-height: 64px;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 3px;
-    vertical-align: middle;
-    margin: 0 auto;
-    padding: 0px;
-    float: left;
-    text-transform: uppercase;
-    transition: border 0.2s ease-out, box-shadow 0.3s ease-out, background 0.2s ease-out, transform 0.4s ease-in, opacity 0.3s ease-in;
-}
-
-a.contact:hover {
-    background: #f9ff52;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
-    border: 2px solid #f9ff52;
-}
-
 a:active,
 a:hover {
     outline: 0;
@@ -239,6 +214,9 @@ NEW DESIGN FOR PROJ
     text-align: center;
     line-height: 2em;
     border-radius: 27px;
+    transition: border 0.2s ease-out, background 0.3s ease-out;
+    margin: 20px auto 20px auto;
+    /*    little more animations*/
 }
 
 .facebook-btn {
@@ -311,9 +289,7 @@ NEW DESIGN FOR PROJ
     height: 140px;
     width: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+    margin: 20px auto;
 }
 
 .back-top {
@@ -375,6 +351,14 @@ NEW DESIGN FOR PROJ
     border-color: transparent transparent rgba(0, 0, 0, 0.9) transparent;
 }
 
+.footer {
+    position: relative;
+    font-size: 12px;
+    margin: 20px auto 20px auto;
+    float: left;
+    margin-left: 20px;
+}
+
 
 /*
 ############
@@ -396,7 +380,7 @@ NEW DESIGN FOR PROJ
 
 .nav-collapse {
     position: absolute;
-    width: 24%;
+    width: 50%;
     top: 2em;
     left: 0;
 }
