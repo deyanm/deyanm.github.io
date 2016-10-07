@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Deyan Marinov &middot; Portfolio</title>
+    <title>Deyan Marinov &middot; Hello</title>
     <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
     <!--[if lte IE 8]><link rel="stylesheet" href="../../responsive-nav.css"><![endif]-->
     <!--[if gt IE 8]><!-->
@@ -32,12 +32,14 @@
             <li><a href="about.html">About</a></li>
         </ul>
     </div>
-    <div id="social">
+
+    <div class="social">
         <a class="facebook-btn social-global" href="http://www.facebook.com/deyanm.sn0w"></a>
         <a class="twitter-btn social-global" href="http://twitter.com/deyanm99"></a>
         <a class="linkedin-btn social-global" href="https://bg.linkedin.com/in/deyan-marinov-6103ab114"></a>
         <a class="github-btn social-global" href="http://github.com/deyanm"></a>
     </div>
+
     <div class="footer">&copy; 2016 <a href="index.html">Deyan Marinov</a>&#46; All rights reserved&#46;</div>
 
     <div role="main" class="main">
@@ -53,25 +55,6 @@
     <script>
         var navigation = responsiveNav("foo", {
             customToggle: ".nav-toggle"
-        });
-    </script>
-    <script>
-        $(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 600) {
-                    $('.back-top').fadeIn(100);
-                } else {
-                    $('.back-top').fadeOut(0);
-                }
-            });
-            $('.back-top').click(function () {
-                $("html, body").animate({
-                    scrollTop: 0
-                }, {
-                    duration: 2000,
-                    easing: "easeOutQuint"
-                });
-            });
         });
     </script>
 </body>
