@@ -127,11 +127,12 @@ a:hover {
     overflow: hidden;
     overflow-y: scroll;
     border-top-left-radius: 7px;
-    top: .6em;
+    border-bottom-left-radius: 7px;
+    top: .3em;
     right: 0;
     bottom: 0;
     width: 76%;
-    background: #fff;
+    background: #fcfcfc;
 }
 
 
@@ -146,16 +147,17 @@ NEW DESIGN FOR PROJ
 .proj-container {
     display: inline-block;
     margin: 0 auto;
+    margin-right: 5px;
     vertical-align: top;
-    margin-right: -5px;
     overflow: hidden;
     position: relative;
-    width: 340px;
+    width: 330px;
     max-width: 100%;
     height: 228px;
     cursor: pointer;
     float: left;
-    border: 5px #fff solid;
+    border: 5px #7658FF solid;
+    border-radius: 10px;
 }
 
 .proj-container img {
@@ -163,8 +165,8 @@ NEW DESIGN FOR PROJ
 }
 
 .proj-container:hover img {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
 }
 
 .proj-container:hover h2 {
@@ -176,7 +178,7 @@ NEW DESIGN FOR PROJ
 
 .proj-container-info {
     position: absolute;
-    background: rgba(5, 5, 5, 0.8);
+    background: rgba(5, 5, 5, 0.3);
     width: 100%;
     height: 100%;
     top: 0;
@@ -298,6 +300,8 @@ NEW DESIGN FOR PROJ
     position: absolute;
     font-size: 20px;
     float: left;
+    padding-top: 20px;
+    padding-bottom: 10px;
     bottom: 0;
 }
 

@@ -27,8 +27,8 @@
     <div role="navigation" id="foo" class="nav-collapse">
         <img class="img-circle" src="icons/profile.jpg" alt="avatar">
         <ul>
-            <li class="active"><a class="nav-link" href="index.html">Hello</a></li>
-            <li><a class="nav-link" href="projects.html">Projects</a></li>
+            <li><a class="nav-link" href="#main">Hello</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
             <li><a class="nav-link" href="#">Blog</a></li>
             <li><a class="nav-link" href="about.html">About</a></li>
         </ul>
@@ -42,14 +42,37 @@
 
     <div role="main" class="main">
         <a href="#nav" class="nav-toggle">Menu</a>
-        <h1>Hello&#44;&nbsp;I&rsquo;m Deyan</h1>
+        <h1>Hello&nbsp;I&rsquo;m Deyan</h1>
 
-        <p class="intro">I like music&#44; hang-out with friends&#44; contributing in fun projects with fun people&#46;</p>
+        <p class="intro">I like music, hang-out with friends, contributing in fun projects with fun people!</p>
 
         <p class="h1">
             I'm currenty available for freelance work.
         </p>
-        <div class="footer">&copy; 2016 <a href="mailto:deiandeni13@gmail.com">Deyan Marinov</a> All rights reserved</div>
+        <div class="proj" id="projects">
+            <div class="proj-container">
+                <div class="proj-container-info">
+                    <h2>Pravets PC</h2>
+                    <p class="proj-container-spec"><span>Information website about</span><span>computers made in Pravets.</span></p>
+                </div>
+                <img src="icons/pravec.png">
+            </div>
+            <div class="proj-container">
+                <div class="proj-container-info">
+                    <h2>Title</h2>
+                    <p class="proj-container-spec">More stuff</p>
+                </div>
+                <img src="icons/1.jpg">
+            </div>
+            <div class="proj-container">
+                <div class="proj-container-info">
+                    <h2>Title</h2>
+                    <p class="proj-container-spec">More stuff</p>
+                </div>
+                <img src="icons/2.jpg">
+            </div>
+            <div class="footer">&copy; 2016 <a href="mailto:deiandeni13@gmail.com">Deyan Marinov</a> All rights reserved</div>
+        </div>
     </div>
     <script>
         var navigation = responsiveNav("foo", {
