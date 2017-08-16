@@ -5,6 +5,22 @@
 * using responsivenav
 */
 
+
+/*
+   Table Of Content
+   
+   1. Global Styles
+   2. Projects
+   3. Social menu
+   4. Main and nav style (from responsive-nav)
+   5. My Experience
+   6. About
+   7. Footer
+*/
+
+
+/* Global Styles */
+
 @charset "UTF-8";
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css");
 @font-face {
@@ -136,13 +152,10 @@ a:hover {
 }
 
 
-/*
-###############
-###############
-NEW DESIGN FOR PROJ
-###############
-###############
-*/
+/* Global Styles End*/
+
+
+/* */
 
 .proj-container {
     display: inline-block;
@@ -296,20 +309,6 @@ NEW DESIGN FOR PROJ
     max-width: 400px;
 }
 
-.footer {
-    position: absolute;
-    font-size: 20px;
-    float: left;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    bottom: 0;
-}
-
-.footer a {
-    color: #7658FF;
-    font-weight: bold;
-}
-
 
 /*--- The Main and nav styles*/
 
@@ -456,6 +455,116 @@ NEW DESIGN FOR PROJ
     .main::-webkit-scrollbar {
         background-color: transparent;
     }
+}
+
+
+/* Footer section */
+
+.footer {
+    position: absolute;
+    font-size: 20px;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    bottom: 0;
+}
+
+.footer a {
+    color: #7658FF;
+    font-weight: bold;
+}
+
+
+/* My Experience */
+
+.section-space-padding {
+    padding: 100px 0px;
+}
+
+.experience {
+    margin-left: 70px;
+    padding: 100px 0px;
+}
+
+.experience-item {
+    position: relative;
+    margin: 40px 0px;
+}
+
+.experience-circle {
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px;
+    border-radius: 100%;
+    position: absolute;
+    left: -60px;
+    color: #fff;
+    background: #4c9cef;
+    padding-top: 25px;
+    box-shadow: -5px 6px 4px 0px rgba(90, 91, 95, 0.3);
+}
+
+.experience-circle i {
+    display: block;
+    font-size: 40px;
+}
+
+.experience-circle p {
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.experience-content {
+    margin-left: 80px;
+    position: relative;
+    background: #fff;
+    border: 2px solid #f7639a;
+    border-radius: 6px;
+    padding: 20px 25px;
+}
+
+.experience-content h4 {
+    line-height: 30px;
+}
+
+.experience-content:after,
+.experience-content:before {
+    right: 100%;
+    top: 35%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.experience-content:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #ffffff;
+    border-width: 12px;
+    margin-top: -20px;
+}
+
+.experience-content:before {
+    border-color: rgba(238, 238, 238, 0);
+    border-right-color: #f7639a;
+    border-width: 16px;
+    margin-top: -21px;
+}
+
+.experience-content p {
+    color: #696969;
+}
+
+.experience-color-blue {
+    border: 2px solid #4c9cef !important;
+}
+
+.experience-color-blue:before {
+    border-right-color: #4c9cef !important;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 1.3),

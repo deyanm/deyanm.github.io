@@ -17,9 +17,16 @@
     <link rel="shortcut icon" href="icons/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta name="msapplication-config" content="icons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#7658FF">
     <!--<![endif]-->
     <script src="dist/responsive-nav.js"></script>
+
+    <!-- SEO tags -->
+    <meta name="description" content="My personal portfolio website">
+    <meta name="author" content="deyanm">
+    <meta name="url" content="http://www.deyanm.com">
+    <meta name="copyright" content="deyanm">
+    <meta name="robots" content="index,follow">
 </head>
 
 <body>
@@ -27,9 +34,9 @@
     <div role="navigation" id="foo" class="nav-collapse">
         <img class="img-circle" src="icons/profile.jpg" alt="avatar">
         <ul>
-            <li><a class="nav-link" href="#main">Hello</a></li>
+            <li><a class="nav-link" href="#home">Hello</a></li>
+            <li><a class="nav-link" href="#experience">My Experience</a></li>
             <li><a class="nav-link" href="#projects">Projects</a></li>
-            <li><a class="nav-link" href="http://deyanm.github.io/blog">Blog</a></li>
             <li><a class="nav-link" href="about.html">About</a></li>
         </ul>
         <div class="social">
@@ -42,13 +49,58 @@
 
     <div role="main" class="main">
         <a href="#nav" class="nav-toggle">Menu</a>
-        <h1>Hello&nbsp;I&rsquo;m Deyan</h1>
+        <section id="home">
+            <h1>Hello&nbsp;I&rsquo;m Deyan</h1>
 
-        <p class="intro">I like music, hang-out with friends, contributing in fun projects with fun people!</p>
+            <p class="intro">I like music, hang-out with friends, contributing in fun projects with fun people!</p>
 
-        <p class="h1">
-            I'm currenty available for freelance work.
-        </p>
+            <p class="h1">
+                I'm currenty available for freelance work.
+            </p>
+        </section>
+
+        <!-- Experience Start -->
+        <section class="section-space-padding" id="experience">
+            <div class="experience">
+                <div class="experience-item">
+                    <div class="experience-circle">
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                        <p>8, Nov 2016</p>
+                    </div>
+                    <div class="experience-content experience-color-blue">
+                        <h4>Master Degree in Java</h4>
+                        <h6>College Name here</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend risus sed feugiat faucibus.</p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-circle">
+                        <i class="fa fa-trophy" aria-hidden="true"></i>
+                        <p>8, Nov 2016</p>
+                    </div>
+                    <div class="experience-content experience-color-blue">
+                        <h4>Diploma in Web Designing</h4>
+                        <h6>Institute Name here</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend risus sed feugiat faucibus.</p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-circle">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <p>8, Nov 2016</p>
+                    </div>
+                    <div class="experience-content experience-color-blue">
+                        <h4>High School Education</h4>
+                        <h6>School Name here</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend risus sed feugiat faucibus.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Experience End -->
+
         <div class="proj" id="projects">
             <div class="proj-container">
                 <div class="proj-container-info">
@@ -71,8 +123,8 @@
                 </div>
                 <img src="icons/2.jpg">
             </div>
-            <div class="footer">&copy; 2016 <a href="mailto:deiandeni13@gmail.com">Deyan Marinov</a> All rights reserved</div>
         </div>
+        <div class="footer">&copy; 2016 <a href="mailto:deiandeni13@gmail.com">Deyan Marinov</a> All rights reserved</div>
     </div>
     <script>
         var navigation = responsiveNav("foo", {
