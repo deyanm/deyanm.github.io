@@ -236,7 +236,7 @@ a:hover {
 }
 
 .facebook-btn {
-    background: #4060A5;
+    background: #3b5998;
 }
 
 .facebook-btn:before {
@@ -245,9 +245,9 @@ a:hover {
 }
 
 .facebook-btn:hover {
-    color: #4060A5;
-    background: #fff;
-    border-color: #4060A5;
+    color: #3b5998;
+    background: #fff!important;
+    border-color: #3b5998;
 }
 
 .stackoverflow-btn {
@@ -261,7 +261,7 @@ a:hover {
 
 .stackoverflow-btn:hover {
     color: #f48024;
-    background: #fff;
+    background: #fff!important;
     border-color: #f48024;
 }
 
@@ -276,7 +276,7 @@ a:hover {
 
 .linkedin-btn:hover {
     color: #0094BC;
-    background: #fff;
+    background: #fff!important;
     border-color: #0094BC;
 }
 
@@ -291,7 +291,7 @@ a:hover {
 
 .github-btn:hover {
     color: #4183C4;
-    background: #fff;
+    background: #fff!important;
     border-color: #4183C4;
 }
 
