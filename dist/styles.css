@@ -22,10 +22,10 @@
 /* Global Styles */
 
 @charset "UTF-8";
-@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css");
 @font-face {
-    font-family: "responsivenav";
-    src: url("../icons/responsivenav.ttf") format("truetype");
+    font-family: 'fontello';
+    src: url('../fonts/fontello.eot?41636014');
+    src: url('../fonts/fontello.eot?41636014#iefix') format('embedded-opentype'), url('../fonts/fontello.woff?41636014') format('woff'), url('../fonts/fontello.ttf?41636014') format('truetype'), url('../fonts/fontello.svg?41636014#fontello') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -155,7 +155,7 @@ a:hover {
 /* Global Styles End*/
 
 
-/* */
+/*---PROJECTS--- */
 
 .proj-container {
     display: inline-block;
@@ -216,7 +216,7 @@ a:hover {
 .social {
     text-align: center;
     float: left;
-    margin-left: 10%;
+    width: 100%;
     text-align: center;
 }
 
@@ -231,7 +231,7 @@ a:hover {
     text-decoration: none;
     text-align: center;
     line-height: 2em;
-    border-radius: 27px;
+    border-radius: 50%;
     transition: border 0.2s ease-out, background 0.3s ease-out;
 }
 
@@ -240,7 +240,7 @@ a:hover {
 }
 
 .facebook-btn:before {
-    font-family: "FontAwesome";
+    font-family: "fontello";
     content: "\f09a";
 }
 
@@ -250,19 +250,19 @@ a:hover {
     border-color: #4060A5;
 }
 
-.twitter-btn {
-    background: #00ABE3;
+.stackoverflow-btn {
+    background: #f48024;
 }
 
-.twitter-btn:before {
-    font-family: "FontAwesome";
-    content: "\f099";
+.stackoverflow-btn:before {
+    font-family: "fontello";
+    content: "\f16c";
 }
 
-.twitter-btn:hover {
-    color: #00ABE3;
+.stackoverflow-btn:hover {
+    color: #f48024;
     background: #fff;
-    border-color: #00ABE3;
+    border-color: #f48024;
 }
 
 .linkedin-btn {
@@ -270,7 +270,7 @@ a:hover {
 }
 
 .linkedin-btn:before {
-    font-family: "FontAwesome";
+    font-family: "fontello";
     content: "\f0e1";
 }
 
@@ -285,7 +285,7 @@ a:hover {
 }
 
 .github-btn:before {
-    font-family: "FontAwesome";
+    font-family: "fontello";
     content: "\f09b";
 }
 
@@ -295,22 +295,26 @@ a:hover {
     border-color: #4183C4;
 }
 
-.img-circle {
+
+/*---CIRCLE PROFILE IMAGE---*/
+
+.profile-con {
+    width: 100%;
+    overflow: hidden;
+}
+
+.profile-con img {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    height: 200px;
-    width: auto;
+    height: 70%;
+    width: 70%;
     display: block;
-    margin-left: 20px;
-    max-width: 400px;
+    margin: auto;
 }
 
 
-/*--- The Main and nav styles*/
+/*---THE MAIN AND NAV STYLES---*/
 
 .main::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -345,6 +349,8 @@ a:hover {
 .nav-link {
     color: #FFDB0D;
     font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -422,15 +428,15 @@ a:hover {
         margin: 0 -2em 1em 0;
     }
     .nav-toggle:before {
-        color: #BFAF85;
-        font-family: "responsivenav";
+        color: #FFDB0D;
+        font-family: "fontello";
         font-style: normal;
         font-weight: normal;
         font-variant: normal;
-        font-size: 28px;
+        font-size: 40px;
         text-transform: none;
         position: absolute;
-        content: "\2261";
+        content: "\f0c9";
         text-indent: 0;
         text-align: center;
         line-height: 65px;
@@ -440,8 +446,8 @@ a:hover {
         left: 0;
     }
     .nav-toggle.active:before {
-        font-size: 24px;
-        content: "\78";
+        font-size: 40px;
+        content: "\e800";
     }
     .main {
         -webkit-overflow-scrolling: auto;
@@ -461,7 +467,7 @@ a:hover {
 /* Footer section */
 
 .footer {
-    position: absolute;
+    position: relative;
     font-size: 20px;
     float: left;
     padding-top: 20px;
@@ -475,10 +481,10 @@ a:hover {
 }
 
 
-/* My Experience */
+/*--- MY EXPERIENCE --- */
 
 .section-space-padding {
-    padding: 100px 0px;
+    padding: 20px 0px;
 }
 
 .experience {
@@ -507,6 +513,10 @@ a:hover {
 }
 
 .experience-circle i {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
     display: block;
     font-size: 40px;
 }
@@ -523,6 +533,11 @@ a:hover {
     border: 2px solid #f7639a;
     border-radius: 6px;
     padding: 20px 25px;
+}
+
+.experience-content h2 {
+    font-size: 20px;
+    line-height: 30px;
 }
 
 .experience-content h4 {
