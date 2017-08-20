@@ -220,6 +220,10 @@ a:hover {
     text-align: center;
 }
 
+.social h2 {
+    color: #FFDB0D;
+}
+
 .social-button {
     font-size: 20px;
     display: inline-block;
@@ -313,6 +317,7 @@ a:hover {
     width: 80%;
     display: block;
     margin: auto;
+    overflow: hidden;
 }
 
 
@@ -483,6 +488,24 @@ a:hover {
 }
 
 
+/*--- CLEAR FIX ---*/
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+    /* For IE 6/7 (trigger hasLayout) */
+}
+
+
 /*--- MY EXPERIENCE --- */
 
 .section-space-padding {
@@ -491,7 +514,6 @@ a:hover {
 
 .experience {
     margin-left: 70px;
-    /*    padding: 100px 0px;*/
 }
 
 .experience-item {
@@ -506,8 +528,8 @@ a:hover {
     line-height: 35px;
     font-size: 14px;
     border-radius: 100%;
-    position: absolute;
-    left: -60px;
+    position: relative;
+    /*    left: -60px;*/
     color: #fff;
     background: #4c9cef;
     padding-top: 25px;
@@ -554,7 +576,7 @@ a:hover {
     content: " ";
     height: 0;
     width: 0;
-    position: absolute;
+    position: relative;
     pointer-events: none;
 }
 
@@ -568,7 +590,7 @@ a:hover {
 .experience-content:before {
     border-color: rgba(238, 238, 238, 0);
     border-right-color: #f7639a;
-    border-width: 16px;
+    sborder-width: 16px;
     margin-top: -21px;
 }
 
