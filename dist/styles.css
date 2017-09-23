@@ -21,7 +21,6 @@
 
 /* Global Styles */
 
-@charset "UTF-8";
 @font-face {
     font-family: 'fontello';
     src: url('../fonts/fontello.eot?41636014');
@@ -405,6 +404,7 @@ a:hover {
         top: 0;
         width: 100%;
         position: relative;
+        text-align: center;
     }
     .nav-collapse.opened {
         max-height: 9999px
@@ -528,8 +528,8 @@ a:hover {
     line-height: 35px;
     font-size: 14px;
     border-radius: 100%;
-    position: relative;
-    /*    left: -60px;*/
+    position: absolute;
+    left: -60px;
     color: #fff;
     background: #4c9cef;
     padding-top: 25px;
@@ -551,12 +551,13 @@ a:hover {
 }
 
 .experience-content {
-    margin-left: 80px;
+    margin-left: 150px;
+    overflow: auto;
     position: relative;
     background: #fff;
     border: 2px solid #f7639a;
     border-radius: 6px;
-    padding: 20px 25px;
+    padding: 10px 25px;
 }
 
 .experience-content h2 {
@@ -576,22 +577,12 @@ a:hover {
     content: " ";
     height: 0;
     width: 0;
-    position: relative;
+    position: absolute;
     pointer-events: none;
-}
-
-.experience-content:after {
-    border-color: rgba(255, 255, 255, 0);
-    border-right-color: #ffffff;
-    border-width: 12px;
-    margin-top: -20px;
-}
-
-.experience-content:before {
-    border-color: rgba(238, 238, 238, 0);
-    border-right-color: #f7639a;
-    sborder-width: 16px;
-    margin-top: -21px;
+    border-color: rgba(0, 128, 0, 0);
+    border-right-color: #4c9cef;
+    border-width: 25px;
+    margin-top: -25px;
 }
 
 .experience-content p {
@@ -604,6 +595,76 @@ a:hover {
 
 .experience-color-blue:before {
     border-right-color: #4c9cef !important;
+}
+
+
+/*-------THE FLOATING LOGO------*/
+
+@keyframes float_top {
+    0% {
+        transform: translatey(30px);
+    }
+    50% {
+        transform: translatey(37px);
+    }
+    100% {
+        transform: translatey(30px);
+    }
+}
+
+@keyframes float_middle {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(10px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes float_bottom {
+    0% {
+        transform: translatey(-30px);
+    }
+    50% {
+        transform: translatey(-5px);
+    }
+    100% {
+        transform: translatey(-30px);
+    }
+}
+
+.logo-container {
+    width: 100%;
+    height: auto;
+}
+
+.logo-container>.logo-top,
+.logo-middle,
+.logo-bottom {
+    margin: 0 auto;
+}
+
+.logo-top {
+    width: 100px;
+    height: auto;
+    transform: translatey(20px);
+    animation: float_top 4s ease-in-out infinite;
+}
+
+.logo-middle {
+    width: 100px;
+    height: auto;
+    transform: translatey(0px);
+    animation: float_middle 5s ease-in-out infinite;
+}
+
+.logo-bottom {
+    width: 100px;
+    height: auto;
+    animation: float_bottom 5s ease-in-out infinite;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 1.3),
