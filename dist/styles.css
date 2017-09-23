@@ -137,7 +137,7 @@ a:hover {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-overflow-scrolling: touch;
-    padding: 3em 4em;
+    padding: 3em 3em;
     position: fixed;
     overflow: hidden;
     overflow-y: scroll;
@@ -158,8 +158,7 @@ a:hover {
 
 .proj-container {
     display: inline-block;
-    margin: 0 auto;
-    margin-right: 6px;
+    margin: 10px 5px 5px;
     vertical-align: top;
     overflow: hidden;
     position: relative;
@@ -179,6 +178,12 @@ a:hover {
 
 .proj-container img {
     transition: 0.5s;
+    display: block;
+    margin: 0 auto;
+}
+
+.proj-container a {
+    color: #747684;
 }
 
 .proj-container:hover img {
