@@ -2,11 +2,14 @@
 .icon-cancel:before { content: '\e800'; } /* '' */
 .icon-book:before { content: '\e801'; } /* '' */
 .icon-award:before { content: '\e802'; } /* '' */
+.icon-mail:before { content: '\e803'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-github-circled:before { content: '\f09b'; } /* '' */
 .icon-menu:before { content: '\f0c9'; } /* '' */
+.icon-mail-alt:before { content: '\f0e0'; } /* '' */
 .icon-linkedin:before { content: '\f0e1'; } /* '' */
 .icon-stackoverflow:before { content: '\f16c'; } /* '' */
 .icon-graduation-cap:before { content: '\f19d'; } /* '' */
+.icon-share-squared:before { content: '\f1e1'; } /* '' */
 .icon-copyright:before { content: '\f1f9'; } /* '' */
 .icon-diamond:before { content: '\f219'; } /* '' */
