@@ -1,23 +1,25 @@
 /*
-* @deyanm - Github
+* @author - deyanm (Github)
 * Copyright Deyan Marinov 2016
 * Available under MIT License
-* using responsivenav
+* The project is using responsive-nav.js, see developer for more information
 */
 
 /*
    Table Of Content
 
    1. Global Styles
-   2. Projects
-   3. Social menu
-   4. Main and nav style (from responsive-nav)
-   5. My Experience
-   6. About
-   7. Footer
+   2. Intro Section (About me)
+   3. Projects
+   4. Social menu
+   5. Circle profile image
+   6. Main and nav style (from responsive-nav)
+   7. My Experience
+   8. Floating logo
+   9. Footer
 */
 
-/* Global Styles */
+/* ------------Global Styles Start----------- */
 
 @font-face {
   font-family: 'fontello';
@@ -101,12 +103,6 @@ p span {
   display: block;
 }
 
-p.intro {
-  font-size: 1.25em;
-  color: #555;
-  font-weight: bold;
-}
-
 a {
   color: #f4f4f4;
   text-decoration: none;
@@ -118,9 +114,10 @@ a:active, a:hover {
 
 ::selection {
   background: #F2EEB9;
-  color: #222;
   text-shadow: none;
 }
+
+/* ------------Global Styles End----------- */
 
 .main {
   -webkit-box-sizing: border-box;
@@ -140,7 +137,11 @@ a:active, a:hover {
   background: #fcfcfc;
 }
 
-/* Global Styles End*/
+.intro {
+  font-size: 1.25em;
+  color: #555;
+  font-weight: bold;
+}
 
 /*---PROJECTS--- */
 
@@ -209,7 +210,7 @@ a:active, a:hover {
   color: #000;
 }
 
-/*--- SOCIAL MENU ICONS ---*/
+/*--- SOCIAL MENU ICONS START---*/
 
 .social {
   text-align: center;
@@ -313,7 +314,9 @@ a:active, a:hover {
   border-color: #4183C4;
 }
 
-/*---CIRCLE PROFILE IMAGE---*/
+/*--- SOCIAL MENU ICONS START---*/
+
+/*---CIRCLE PROFILE IMAGE START---*/
 
 .avatar-container {
   max-width: 80%;
@@ -331,6 +334,8 @@ a:active, a:hover {
   margin: auto;
   overflow: hidden;
 }
+
+/*---CIRCLE PROFILE IMAGE END---*/
 
 /*---THE MAIN AND NAV STYLES---*/
 
@@ -486,22 +491,6 @@ a:active, a:hover {
   }
 }
 
-/* Footer section */
-
-.footer {
-  position: relative;
-  font-size: 20px;
-  float: left;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  bottom: 0;
-}
-
-.footer a {
-  color: #7658FF;
-  font-weight: bold;
-}
-
 /*--- CLEAR FIX ---*/
 
 .group:before, .group:after {
@@ -518,9 +507,12 @@ a:active, a:hover {
   /* For IE 6/7 (trigger hasLayout) */
 }
 
-/*--- MY EXPERIENCE --- */
+/*--- MY EXPERIENCE START--- */
 
-.experience {}
+.experience {
+  clear: both;
+  /*padding: 100px 0px !important;*/
+}
 
 .experience-item {
   clear: both;
@@ -540,76 +532,6 @@ a:active, a:hover {
   border-radius: 50%;
   background: #4c9cef;
   color: #fff;
-}
-
-.experience-circle i {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: block;
-  font-size: 40px;
-}
-
-.experience-content {
-  position: relative;
-  margin-left: 150px;
-  height: 150px;
-  width: auto;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 20px;
-  border: 3px #4c9cef solid;
-  transition: all 0.3s ease-in-out;
-}
-
-.experience-content:hover {
-  box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
-}
-
-.experience-content h2 {
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.experience-content p {
-  font-size: 20px;
-  color: #696969;
-  text-align: center;
-  vertical-align: middle;
-  padding: 20px;
-}
-
-.experience-content a {
-  color: #4c9cef;
-}
-
-.experience-content::before {
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: -50px;
-  z-index: 1;
-  border: solid 25px transparent;
-  border-right-color: #4c9cef;
-}
-
-/*.section-space-padding {
-  padding: 100px 0px !important;
-}
-
-.experience-circle {
-  width: 120px;
-  height: 120px;
-  text-align: center;
-  line-height: 35px;
-  font-size: 14px;
-  border-radius: 100%;
-  position: relative;
-  left: -60px;
-  color: #fff;
-  background: #4c9cef;
-  padding-top: 25px;
   box-shadow: -5px 4px 4px 0px rgba(90, 91, 95, 0.3);
 }
 
@@ -622,70 +544,46 @@ a:active, a:hover {
   font-size: 40px;
 }
 
-.experience-circle p {
-  font-size: 13px;
-  margin-top: 5px;
-}
-
 .experience-content {
-  margin-left: 70px;
-  overflow: auto;
+  padding: 10px;
   position: relative;
-  background: #fff;
-  border-radius: 6px;
-  padding: 10px 20px;
+  margin-left: 150px;
+  width: auto;
+  height: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 15px;
+  border: 3px #4c9cef solid;
   transition: all 0.3s ease-in-out;
 }
 
 .experience-content:hover {
-  box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
-  top: -5px;
-}
-
-.experience-content a {
-  color: #000;
+  box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.4);
 }
 
 .experience-content h2 {
+  color: #696969;
   font-size: 20px;
   line-height: 30px;
 }
 
-.experience-content:after, .experience-content:before {
-  right: 100%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: relative;
-}
-
-.experience-content:after {
-  border-color: rgba(255, 255, 255, 0);
-  border-right-color: #ffffff;
-  border-width: 12px;
-  margin-top: -20px;
+.experience-content a {
+  color: #4c9cef;
 }
 
 .experience-content:before {
-  border-color: rgba(238, 238, 238, 0);
-  border-width: 16px;
-  margin-top: -21px;
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -50px;
+  z-index: 1;
+  border: solid 25px transparent;
+  border-right-color: #4c9cef;
 }
 
-.experience-content p {
-  color: #696969;
-}
+/*--- MY EXPERIENCE END--- */
 
-.experience-color-blue {
-  border: 3px solid #4c9cef !important;
-}
-
-.experience-color-blue:before {
-  border-right-color: #4c9cef !important;
-}*/
-
-/*-------THE FLOATING LOGO------*/
+/*-------THE FLOATING LOGO START------*/
 
 @keyframes float_top {
   0% {
@@ -754,6 +652,26 @@ a:active, a:hover {
   height: auto;
   animation: float_bottom 5s ease-in-out infinite;
 }
+
+/*-------THE FLOATING LOGO END------*/
+
+/*-------FOOTER START------*/
+
+.footer {
+  position: relative;
+  font-size: 20px;
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  bottom: 0;
+}
+
+.footer a {
+  color: #7658FF;
+  font-weight: bold;
+}
+
+/*-------FOOTER END------*/
 
 @media screen and (-webkit-min-device-pixel-ratio: 1.3), screen and (min--moz-device-pixel-ratio: 1.3), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-device-pixel-ratio: 1.3), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   body {
