@@ -25,7 +25,8 @@ You can view the website here [deyanm.com](http://deyanm.com/)
 
 ### TODO-s
 
-
+- Fix Experience
+- Fix projects
 License
 ----
 
