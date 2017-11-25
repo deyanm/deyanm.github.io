@@ -144,6 +144,7 @@ a:active, a:hover {
 }
 
 /*---PROJECTS--- */
+
 .projects {
   position: relative;
   display: inline-block;
@@ -152,19 +153,20 @@ a:active, a:hover {
   min-width: 200px;
   max-width: 280px;
   height: 210px;
-  width: 100%;
   color: #ffffff;
   font-size: 16px;
   text-align: left;
   border: 3px #7658FF solid;
   border-radius: 10px;
 }
+
 .projects * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
+
 .projects:before {
   position: absolute;
   top: 10px;
@@ -179,10 +181,12 @@ a:active, a:hover {
   -webkit-transition-delay: 0.25s;
   transition-delay: 0.25s;
 }
+
 .projects img {
   max-width: 100%;
   backface-visibility: hidden;
 }
+
 .projects figcaption {
   position: absolute;
   top: 0;
@@ -195,14 +199,15 @@ a:active, a:hover {
   flex-direction: column;
   justify-content: center;
 }
-.projects h3,
-.projects h5 {
+
+.projects h3, .projects h5 {
   margin: 0;
   padding: 20px;
   text-align: center;
   opacity: 0;
   letter-spacing: 1px;
 }
+
 .projects h3 {
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
@@ -212,6 +217,7 @@ a:active, a:hover {
   transition-delay: 0.05s;
   margin-bottom: 5px;
 }
+
 .projects h5 {
   font-weight: normal;
   background-color: #ae895d;
@@ -221,6 +227,7 @@ a:active, a:hover {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
+
 .projects a {
   position: absolute;
   top: 0;
@@ -229,27 +236,25 @@ a:active, a:hover {
   right: 0;
   z-index: 1;
 }
-.projects:hover:before,
-.projects.hover:before {
+
+.projects:hover:before, .projects.hover:before {
   top: 10px;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
-.projects:hover h3,
-.projects.hover h3,
-.projects:hover h5,
-.projects.hover h5 {
+
+.projects:hover h3, .projects.hover h3, .projects:hover h5, .projects.hover h5 {
   -webkit-transform: translateY(0);
   transform: translateY(0);
   opacity: 1;
 }
-.projects:hover h3,
-.projects.hover h3 {
+
+.projects:hover h3, .projects.hover h3 {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
-.projects:hover h5,
-.projects.hover h5 {
+
+.projects:hover h5, .projects.hover h5 {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
@@ -280,7 +285,7 @@ a:active, a:hover {
   text-align: center;
   line-height: 2em;
   border-radius: 50%;
-  transition: border 0.2s ease-out, background 0.3s ease-out;
+  transition: border 0.2s ease-out, background-color 0.3s ease-out;
 }
 
 .facebook-btn {
@@ -425,9 +430,9 @@ a:active, a:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: background .3s ease;
-  -moz-transition: background .3s ease;
-  transition: background .3s ease;
+  -webkit-transition: background-color .3s ease;
+  -moz-transition: background-color .3s ease;
+  transition: background-color .3s ease;
   text-shadow: 0 -1px rgba(0, 0, 0, .5);
   border-bottom: 1px solid rgba(0, 0, 0, .2);
   border-top: 1px solid rgba(255, 255, 255, .1);
@@ -464,6 +469,9 @@ a:active, a:hover {
     position: absolute;
     display: block;
     overflow: hidden;
+  }
+  .experience-circle {
+    left: 30%;
   }
   .nav-collapse {
     top: 0;
@@ -546,31 +554,34 @@ a:active, a:hover {
   clear: both;
 }
 
-.group {
-  zoom: 1;
-  /* For IE 6/7 (trigger hasLayout) */
-}
-
 /*--- MY EXPERIENCE START--- */
-
-.experience {
-  clear: both;
-  /*padding: 100px 0px !important;*/
-}
 
 .experience-item {
   clear: both;
   position: relative;
-  margin-top: 10px;
-  height: 175px;
+  display: inline-block;
+  overflow: auto;
+  padding: 20px;
+  margin: 10px;
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  max-height: 500px;
+  color: #09cd68;
+  background: #fff;
+  border-radius: 5px;
+  border: 3px #4c9cef solid;
+}
+
+.experience-item p {
+  font-size: 10px;
 }
 
 .experience-circle {
+  position: relative;
   padding-top: 25px;
-  float: left;
-  display: table-cell;
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   text-align: center;
   vertical-align: middle;
   border-radius: 50%;
@@ -586,43 +597,39 @@ a:active, a:hover {
   speak: none;
   display: block;
   font-size: 40px;
+  text-align: center;
+}
+
+.left {
+  float: left;
+}
+
+.clr {
+  clear: both;
 }
 
 .experience-content {
+  width: 80%;
   padding: 10px;
-  position: relative;
-  margin-left: 150px;
+  display: block;
+}
+
+.content-title {
   width: auto;
-  height: auto;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 15px;
-  border: 3px #4c9cef solid;
-  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  color: #222;
+  font-size: 24px;
 }
 
-.experience-content:hover {
-  box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.4);
+.content-text {
+  padding-top: 10px;
+  color: #E8840C;
+  font-size: 18px;
+  width: auto;
 }
 
-.experience-content h2 {
-  color: #696969;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.experience-content a {
+.content-text a {
   color: #4c9cef;
-}
-
-.experience-content:before {
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: -50px;
-  z-index: 1;
-  border: solid 25px transparent;
-  border-right-color: #4c9cef;
 }
 
 /*--- MY EXPERIENCE END--- */
