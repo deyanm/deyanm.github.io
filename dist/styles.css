@@ -71,8 +71,9 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  background: #7658FF;
-  color: #E8840C;
+  background: #1A2930;
+  color: #1A2930;
+  font-weight: bold;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -97,6 +98,7 @@ p {
   float: left;
   width: 100%;
   margin-bottom: 1em;
+  font-size:  23px;
 }
 
 p span {
@@ -156,7 +158,7 @@ a:active, a:hover {
   color: #ffffff;
   font-size: 16px;
   text-align: left;
-  border: 3px #7658FF solid;
+  border: 3px #1A2930 solid;
   border-radius: 10px;
 }
 
@@ -423,7 +425,7 @@ a:active, a:hover {
 }
 
 .nav-link {
-  color: #FFDB0D;
+  color: #F7CE3E;
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
@@ -508,7 +510,7 @@ a:active, a:hover {
     margin: 0 -2em 1em 0;
   }
   .nav-toggle:before {
-    color: #FFDB0D;
+    color: #F7CE3E;
     font-family: "fontello";
     font-style: normal;
     font-weight: normal;
@@ -567,10 +569,9 @@ a:active, a:hover {
   height: auto;
   min-height: 100px;
   max-height: 500px;
-  color: #09cd68;
   background: #fff;
   border-radius: 5px;
-  border: 3px #4c9cef solid;
+  border: 3px #0A1612 solid;
 }
 
 .experience-item p {
@@ -585,7 +586,7 @@ a:active, a:hover {
   text-align: center;
   vertical-align: middle;
   border-radius: 50%;
-  background: #4c9cef;
+  background: #1A2930;
   color: #fff;
   box-shadow: -5px 4px 4px 0px rgba(90, 91, 95, 0.3);
 }
@@ -623,13 +624,13 @@ a:active, a:hover {
 
 .content-text {
   padding-top: 10px;
-  color: #E8840C;
+  color: #8c8c8c;
   font-size: 18px;
   width: auto;
 }
 
 .content-text a {
-  color: #4c9cef;
+  color: #e0bc3b;
 }
 
 /*--- MY EXPERIENCE END--- */
@@ -718,7 +719,7 @@ a:active, a:hover {
 }
 
 .footer a {
-  color: #7658FF;
+  color: #e0bc3b;
   font-weight: bold;
 }
 
